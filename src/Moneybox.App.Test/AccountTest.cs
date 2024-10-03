@@ -16,7 +16,7 @@ namespace Moneybox.App.Test
         }
 
         [Test]
-        public void BalanceDecreasesByX_OnDebit()
+        public void Test_BalanceDecreasesByX_OnDebit()
         {
             const decimal amountToDebit = 100m;
 
@@ -31,7 +31,7 @@ namespace Moneybox.App.Test
         }
 
         [Test]
-        public void BalanceIncreasesByX_OnCredit()
+        public void Test_BalanceIncreasesByX_OnCredit()
         {
             const decimal amountToCredit = 1000m;
 
@@ -46,7 +46,7 @@ namespace Moneybox.App.Test
         }
 
         [Test]
-        public void Validate_PayInLimitCantBeExceeded() /** limit set at 4000m **/
+        public void Test_PayInLimitCantBeExceeded() /** limit set at 4000m **/
         {
             const decimal amountToCreditEachTime = 2000m;
 
