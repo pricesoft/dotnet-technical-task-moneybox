@@ -12,8 +12,12 @@ namespace Moneybox.App
             if (user == null)
                 throw new InvalidOperationException("user");
 
+            if (balance < 0)
+                throw new ArgumentOutOfRangeException("balance");
+
             Id = id;
             User = user;
+            Balance = balance;
         }
 
         public const decimal PayInLimit = 4000m;
